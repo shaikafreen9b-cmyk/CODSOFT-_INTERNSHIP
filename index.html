@@ -1,53 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calculator</title>
+    <title>My Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
+<header>
+    <h2>MyPortfolio</h2>
+</header>
+
+<section class="hero">
+    <img src="photo.jpg" class="profile-img">
+    <h1>Afreen</h1>
+    <p>B.Tech Student | Aspiring Web Developer</p>
+
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+</section>
+
 <div class="container">
 
-    <!-- Calculator -->
-    <div class="calculator">
-        <input type="text" id="display" disabled>
-
-        <div class="buttons">
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="deleteLast()">DEL</button>
-            <button onclick="append('/')">/</button>
-            <button class="op" onclick="append('*')">*</button>
-
-            <button onclick="append('7')">7</button>
-            <button onclick="append('8')">8</button>
-            <button onclick="append('9')">9</button>
-            <button class="op" onclick="append('-')">-</button>
-
-            <button onclick="append('4')">4</button>
-            <button onclick="append('5')">5</button>
-            <button onclick="append('6')">6</button>
-            <button class="op" onclick="append('+')">+</button>
-
-            <button onclick="append('1')">1</button>
-            <button onclick="append('2')">2</button>
-            <button onclick="append('3')">3</button>
-            <button class="equal" onclick="calculate()">=</button>
-
-            <button onclick="append('0')" class="zero">0</button>
-            <button onclick="append('.')">.</button>
-        </div>
+    <div class="card">
+        <i class="fas fa-user"></i>
+        <h2>About Me</h2>
+        <p>I am a student learning web development.</p>
     </div>
 
-    <!-- History -->
-    <div class="history">
-        <h3>History</h3>
-        <ul id="historyList"></ul>
+    <div class="card">
+        <i class="fas fa-code"></i>
+        <h2>Skills</h2>
+        <p>HTML, CSS, Basic JavaScript</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Projects</h2>
+        <p>Portfolio Website</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-envelope"></i>
+        <h2>Contact</h2>
+        <p>Email: shaikafreen9b@email.com</p>
     </div>
 
 </div>
 
-<script src="script.js"></script>
+<footer>
+    <p>© 2026 Afreen</p>
+</footer>
 
 </body>
 </html>
+    
